@@ -51,7 +51,8 @@ throwキーワードを使用してプログラム内で明示的にスローす
 ```
 例1）
 throw new IOException();
-
+```
+```
 例2）
 IOException e = new IOException();
 thorw e;
