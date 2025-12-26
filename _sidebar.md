@@ -10,7 +10,6 @@
   * [拡張for文](java/exfor.md)
   * [switch](java/switch.md)
   * [StringBuilderとString](java/Builder_String.md)
-  * [例外](java/exception.md)
   * [スコープ](java/scope.md)
   * [アクセス修飾子](java/modifier.md)
   * [static](java/static.md)
