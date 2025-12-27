@@ -57,3 +57,6 @@ throw new IOException();
 IOException e = new IOException();
 thorw e;
 ```
+### 例外はコンパイルではなく実行時エラー
+#### NullPointerException
+nullが入っている値に対し、値.concat()などのメソッド呼び出しを行うと、実行時エラーとなる
