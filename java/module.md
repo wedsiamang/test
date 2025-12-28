@@ -59,3 +59,7 @@ jdeps コマンドはmoduleの依存関係を調べる。依存関係を調べ�
 jdeps com¥seshop¥sample¥main¥Main.class
 java.base
 ```
+
+#### module-info.java
+モジュールの設定ファイル。module-info.javaをコンパイルして生成されたmodule-info.classはモジュールのルートディレクトリに配置される。
+何も利用せず、何も公開しないモジュールであれば、module-info.java内を空にすることができる。
