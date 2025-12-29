@@ -18,3 +18,6 @@ System.out.print("banana".compareTo("apple"));
 System.out.print("apple".compareTo("banana"));
 ```
 → -1が返る　sortは、apple,bananaの順になる
+
+#### list.of()
+固定のリストを返すメソッドであり、add などで追加しようとすると、実行時例外が出る。UnsupportedOperationException
