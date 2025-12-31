@@ -77,3 +77,13 @@ nullが入っている値に対し、値.concat()などのメソッド呼び出�
 3:finallyブロックによる事後処理  
 
 例外処理よりも先にcloseメソッドによるリソースの解放が行われる
+
+#### collection の of を変更時の例外 UnsupportedOperationExcdption
+```
+List<String>list=List.of("A","B","C");
+list.clear();
+```
+**of** は、immutableで変更不可だが、コンパイルエラーにはならないのはなぜか。
+- Listインタフェースでclear()メソッドが定義されているため、型的に正しく、コンパイル時には問題ないと判断される。
+- 内部的には変更をサポートしないクラスのため、実行時例外を出す。
+- clear(),add(),remove()など同様。
