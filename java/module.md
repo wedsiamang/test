@@ -79,3 +79,8 @@ java --show-module-resolution
 #### module-info.java
 モジュールの設定ファイル。module-info.javaをコンパイルして生成されたmodule-info.classはモジュールのルートディレクトリに配置される。
 何も利用せず、何も公開しないモジュールであれば、module-info.java内を空にすることができる。
+
+#### 設定を調べる
+- --describe-moduleオプションは、モジュールの設定を調べるためのオプションである。
+- 依存するモジュールを宣言するには requires を使う。
+- java.baseは、どのモジュールにも暗黙的に読み込まれるモジュールであるため、他のモジュールの設定で明示的に宣言する必要はない
