@@ -1,3 +1,13 @@
 # パッケージ
 - import文は、パッケージ名.クラス名、もしくはパッケージ名.*とする必要がある
 - import文を使用しない場合、mainメソッドに、完全名(パッケージ名+クラス名)を指定することもできる
+- Mathクラスはjava.langパッケージに属するため、import文を記述しなくても使用することができる。
+- java.lang は常に自動 import される標準パッケージであり次のクラスを含むため、これらを使用するときは明記不要。
+  - String
+  - System
+  - Math
+  - Integer
+  - Runtime
+  - Exception
+  - Thread
+- main クラスは java.lang には属さず、通常のユーザー定義クラスである。
