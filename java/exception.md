@@ -68,8 +68,16 @@ thorw e;
 
 #### 例外はコンパイルではなく実行時エラー
 #### NullPointerException
-nullが入っている値に対し、値.concat()などのメソッド呼び出しを行うと、実行時エラーとなる
-
+- nullが入っている値に対し、値.concat()などのメソッド呼び出しを行うと、実行時エラーとなる
+- 配列はnullを許容するため、コンパイルエラーにはならないが、その値でフィールドにアクセスを試みるなどの場合、実行時例外が出る。
+  ```
+  //nameはItemクラスのフィールド変数;
+  Item[] items=new Item[2];
+  items[1]=new Item("A");
+  for(Item item:items){
+    System.out.println(item.name);
+  ```
+items[0]はnullのため、１度目のループ出力でNPE。
 #### try-with-resource
 例外が発生した時に、自動的にリソースのcloseメソッドを呼び出し、リソースを解放する構文。  
 1：closeメソッドによるリソース解放の処理  
